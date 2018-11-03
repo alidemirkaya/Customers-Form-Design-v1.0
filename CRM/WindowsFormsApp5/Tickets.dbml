@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRM" Class="TicketsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-9O1LVRH\SQLEXPRESS;Initial Catalog=CRM;Integrated Security=True" SettingsObjectName="WindowsFormsApp5.Properties.Settings" SettingsPropertyName="CRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tickets" Member="Tickets">
+    <Type Name="Tickets">
+      <Column Name="Ticket_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Kategori" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Baslik" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Oncelik" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Baslangic" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Bitirme" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Bekleme" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Durum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
